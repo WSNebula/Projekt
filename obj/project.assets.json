@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Theis\\ProjektForms\\ProjektForms.csproj",
+      "projectUniqueName": "C:\\Users\\Theis\\Projekt\\ProjektForms.csproj",
       "projectName": "ProjektForms",
-      "projectPath": "C:\\Users\\Theis\\ProjektForms\\ProjektForms.csproj",
+      "projectPath": "C:\\Users\\Theis\\Projekt\\ProjektForms.csproj",
       "packagesPath": "C:\\Users\\Theis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Theis\\ProjektForms\\obj\\",
+      "outputPath": "C:\\Users\\Theis\\Projekt\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

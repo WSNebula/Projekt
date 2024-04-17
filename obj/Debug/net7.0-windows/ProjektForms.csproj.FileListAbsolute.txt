@@ -1,0 +1,16 @@
+C:\Users\Theis\Projekt\bin\Debug\net7.0-windows\ProjektForms.exe
+C:\Users\Theis\Projekt\bin\Debug\net7.0-windows\ProjektForms.deps.json
+C:\Users\Theis\Projekt\bin\Debug\net7.0-windows\ProjektForms.runtimeconfig.json
+C:\Users\Theis\Projekt\bin\Debug\net7.0-windows\ProjektForms.dll
+C:\Users\Theis\Projekt\bin\Debug\net7.0-windows\ProjektForms.pdb
+C:\Users\Theis\Projekt\obj\Debug\net7.0-windows\ProjektForms.Form1.resources
+C:\Users\Theis\Projekt\obj\Debug\net7.0-windows\ProjektForms.csproj.GenerateResource.cache
+C:\Users\Theis\Projekt\obj\Debug\net7.0-windows\ProjektForms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Theis\Projekt\obj\Debug\net7.0-windows\ProjektForms.AssemblyInfoInputs.cache
+C:\Users\Theis\Projekt\obj\Debug\net7.0-windows\ProjektForms.AssemblyInfo.cs
+C:\Users\Theis\Projekt\obj\Debug\net7.0-windows\ProjektForms.csproj.CoreCompileInputs.cache
+C:\Users\Theis\Projekt\obj\Debug\net7.0-windows\ProjektForms.dll
+C:\Users\Theis\Projekt\obj\Debug\net7.0-windows\refint\ProjektForms.dll
+C:\Users\Theis\Projekt\obj\Debug\net7.0-windows\ProjektForms.pdb
+C:\Users\Theis\Projekt\obj\Debug\net7.0-windows\ProjektForms.genruntimeconfig.cache
+C:\Users\Theis\Projekt\obj\Debug\net7.0-windows\ref\ProjektForms.dll
