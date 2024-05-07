@@ -2,26 +2,25 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using System.Windows.Forms; // Added this line
+using System.Windows.Forms;
 
 namespace ProjektForms
 {
-    public class Udgift 
-    { 
+    public class Udgift
+    {
         public double Currency { get; set; }
-        public double Name { get; set; }
     }
+
     public class Månedsløn
     {
-        public double Sallery { get; set; }
+        public double Salary { get; set; }
     }
 
-    public class MyClass
+    public static class UtilityFunctions
     {
-        public double GetTextBoxMåned(TextBox textBoxMåned)
+        public static double GetTextBoxValue(TextBox textBoxPenge)
         {
-            double value;
-            if (double.TryParse(textBoxMåned.Text, out value))
+            if (double.TryParse(textBoxPenge.Text, out double value))
             {
                 return value;
             }
@@ -30,25 +29,6 @@ namespace ProjektForms
                 // Handle invalid input
                 throw new ArgumentException("Invalid input");
             }
-        }
-
-        public double GetTextBoxValue(TextBox textBoxPenge)
-        {
-            double value;
-            if (double.TryParse(textBoxPenge.Text, out value))
-            {
-                return value;
-            }
-            else
-            {
-                // Handle invalid input
-                throw new ArgumentException("Invalid input");
-            }
-        }
-
-        public string GetTextBoxName(TextBox textBoxNavn)
-        {
-            return textBoxNavn.Text;
         }
     }
 }
