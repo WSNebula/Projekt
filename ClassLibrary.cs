@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Windows.Forms; // Added this line
 
 namespace ProjektForms
 {
@@ -15,36 +16,39 @@ namespace ProjektForms
         public double Sallery { get; set; }
     }
 
-    public double GetTextBoxValue(TextBox textBoxMåned)
+    public class MyClass
     {
-        double value;
-        if (double.TryParse(textBoxMåned.Text, out value))
+        public double GetTextBoxMåned(TextBox textBoxMåned)
         {
-            return value;
+            double value;
+            if (double.TryParse(textBoxMåned.Text, out value))
+            {
+                return value;
+            }
+            else
+            {
+                // Handle invalid input
+                throw new ArgumentException("Invalid input");
+            }
         }
-        else
+
+        public double GetTextBoxValue(TextBox textBoxPenge)
         {
-            // Handle invalid input
-            throw new ArgumentException("Invalid input");
+            double value;
+            if (double.TryParse(textBoxPenge.Text, out value))
+            {
+                return value;
+            }
+            else
+            {
+                // Handle invalid input
+                throw new ArgumentException("Invalid input");
+            }
+        }
+
+        public string GetTextBoxName(TextBox textBoxNavn)
+        {
+            return textBoxNavn.Text;
         }
     }
-
-    public double GetTextBoxValue(TextBox textBoxPenge)
-    {
-        double value;
-        if (double.TryParse(textBoxPenge.Text, out value))
-        {
-        return value;
-        }
-        else
-        {
-            // Handle invalid input
-            throw new ArgumentException("Invalid input");
-        }
-    }
-
-public string GetTextBoxValue(TextBox textBoxNavn)
-{
-    return textBoxNavn.Text;
-}
 }
