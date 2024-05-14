@@ -21,9 +21,8 @@ namespace ProjektForms
         {
             // Tax rates and thresholds
             const double arbejdsmarkedsbidragRate = 0.08;
-            const double kommuneKirkeskatRate = 0.251;
-            const double bundskatRate1 = 0.08; // Rate for the first bracket
-            const double bundskatRate2 = 0.195; // Rate for the second bracket
+            const double kommuneRate = 0.251;
+            const double bundskatRate = 0.125; // Corrected rate for the bottom tax
             const double personFradragYearly = 49700; // Yearly standard deduction
             const double topskatRate = 0.15;
             const double topskatThreshold = 640109;
@@ -40,35 +39,23 @@ namespace ProjektForms
             // Calculate labor market contribution
             double arbejdsmarkedsbidrag = taxableIncome * arbejdsmarkedsbidragRate;
 
-            // Calculate municipal and church tax (bundskat)
-            double bundskat = 0;
-            if (taxableIncome <= 55200)
-            {
-                bundskat = taxableIncome * bundskatRate1;
-            }
-            else if (taxableIncome <= 583600)
-            {
-                double firstBracketTax = 55200 * bundskatRate1;
-                double remainingIncome = taxableIncome - 55200;
-                bundskat = firstBracketTax + (remainingIncome * bundskatRate2);
-            }
-            else
-            {
-                double firstBracketTax = 55200 * bundskatRate1;
-                double secondBracketTax = (583600 - 55200) * bundskatRate2;
-                double remainingIncome = taxableIncome - 583600;
-                bundskat = firstBracketTax + secondBracketTax + (remainingIncome * kommuneKirkeskatRate);
-            }
+            // Calculate municipal tax
+            double kommuneskat = taxableIncome * kommuneRate;
+
+            // Calculate bottom tax (bundskat)
+            double bundskat = taxableIncome * bundskatRate; // Corrected calculation for the bottom tax
 
             // Calculate top tax if applicable
             double remainingIncomeForTopTax = taxableIncome - topskatThreshold;
             double topskat = remainingIncomeForTopTax > 0 ? remainingIncomeForTopTax * topskatRate : 0;
 
             // Sum up the taxes
-            tax = arbejdsmarkedsbidrag + bundskat + topskat;
+            tax = arbejdsmarkedsbidrag + kommuneskat + bundskat + topskat;
 
             return tax;
         }
+
+
     }
 
     public static class GetTextBoxValues

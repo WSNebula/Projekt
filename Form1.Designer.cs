@@ -69,8 +69,9 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.Linen;
             label4.Font = new Font("Arial Rounded MT Bold", 8.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = SystemColors.Control;
+            label4.ForeColor = SystemColors.WindowText;
             label4.Location = new Point(186, 254);
             label4.Name = "label4";
             label4.Size = new Size(133, 14);
@@ -117,8 +118,9 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Linen;
             label2.Font = new Font("Arial Rounded MT Bold", 8.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = SystemColors.Control;
+            label2.ForeColor = SystemColors.WindowText;
             label2.Location = new Point(93, 45);
             label2.Name = "label2";
             label2.Size = new Size(68, 14);
@@ -128,8 +130,9 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Linen;
             label5.Font = new Font("Arial Rounded MT Bold", 8.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = SystemColors.Control;
+            label5.ForeColor = SystemColors.WindowText;
             label5.Location = new Point(365, 45);
             label5.Name = "label5";
             label5.Size = new Size(95, 14);
@@ -169,8 +172,9 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = Color.Linen;
             label6.Font = new Font("Arial Rounded MT Bold", 8.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.ForeColor = SystemColors.Control;
+            label6.ForeColor = SystemColors.WindowText;
             label6.Location = new Point(585, 45);
             label6.Name = "label6";
             label6.Size = new Size(150, 14);
@@ -198,8 +202,9 @@
             // label7
             // 
             label7.AutoSize = true;
+            label7.BackColor = Color.Linen;
             label7.Font = new Font("Arial Rounded MT Bold", 8.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = SystemColors.Control;
+            label7.ForeColor = SystemColors.WindowText;
             label7.Location = new Point(738, 254);
             label7.Name = "label7";
             label7.Size = new Size(177, 14);
@@ -209,7 +214,7 @@
             // textBoxFradrag
             // 
             textBoxFradrag.Font = new Font("Arial Rounded MT Bold", 8.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxFradrag.Location = new Point(765, 62);
+            textBoxFradrag.Location = new Point(765, 65);
             textBoxFradrag.Name = "textBoxFradrag";
             textBoxFradrag.Size = new Size(100, 21);
             textBoxFradrag.TabIndex = 29;
@@ -217,9 +222,10 @@
             // labelFradrag
             // 
             labelFradrag.AutoSize = true;
+            labelFradrag.BackColor = Color.Linen;
             labelFradrag.Font = new Font("Arial Rounded MT Bold", 8.75F, FontStyle.Regular, GraphicsUnit.Point);
-            labelFradrag.ForeColor = SystemColors.Control;
-            labelFradrag.Location = new Point(765, 45);
+            labelFradrag.ForeColor = SystemColors.WindowText;
+            labelFradrag.Location = new Point(765, 48);
             labelFradrag.Name = "labelFradrag";
             labelFradrag.Size = new Size(207, 14);
             labelFradrag.TabIndex = 30;
@@ -229,7 +235,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(64, 64, 64);
+            BackColor = Color.Linen;
             ClientSize = new Size(1010, 639);
             Controls.Add(labelFradrag);
             Controls.Add(textBoxFradrag);
