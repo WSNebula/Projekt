@@ -44,7 +44,8 @@
             SubmitMåned2 = new Button();
             textBoxOutput2 = new TextBox();
             label7 = new Label();
-            checkBox1 = new CheckBox();
+            textBoxFradrag = new TextBox();
+            labelFradrag = new Label();
             SuspendLayout();
             // 
             // Submit
@@ -160,7 +161,7 @@
             // textBoxMåned2
             // 
             textBoxMåned2.Font = new Font("Arial Rounded MT Bold", 8.75F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxMåned2.Location = new Point(632, 65);
+            textBoxMåned2.Location = new Point(585, 65);
             textBoxMåned2.Name = "textBoxMåned2";
             textBoxMåned2.Size = new Size(100, 21);
             textBoxMåned2.TabIndex = 23;
@@ -170,7 +171,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Arial Rounded MT Bold", 8.75F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = SystemColors.Control;
-            label6.Location = new Point(632, 45);
+            label6.Location = new Point(585, 45);
             label6.Name = "label6";
             label6.Size = new Size(150, 14);
             label6.TabIndex = 24;
@@ -179,7 +180,7 @@
             // SubmitMåned2
             // 
             SubmitMåned2.Font = new Font("Arial Rounded MT Bold", 8.75F, FontStyle.Regular, GraphicsUnit.Point);
-            SubmitMåned2.Location = new Point(632, 106);
+            SubmitMåned2.Location = new Point(585, 106);
             SubmitMåned2.Name = "SubmitMåned2";
             SubmitMåned2.Size = new Size(100, 26);
             SubmitMåned2.TabIndex = 25;
@@ -205,17 +206,24 @@
             label7.TabIndex = 27;
             label7.Text = "Penge at betale i skat |output|";
             // 
-            // checkBox1
+            // textBoxFradrag
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Font = new Font("Arial Rounded MT Bold", 8.75F, FontStyle.Regular, GraphicsUnit.Point);
-            checkBox1.ForeColor = SystemColors.Control;
-            checkBox1.Location = new Point(755, 65);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(260, 18);
-            checkBox1.TabIndex = 28;
-            checkBox1.Text = "Er du medlem af folkekirken? (kirkeskat)";
-            checkBox1.UseVisualStyleBackColor = true;
+            textBoxFradrag.Font = new Font("Arial Rounded MT Bold", 8.75F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxFradrag.Location = new Point(765, 62);
+            textBoxFradrag.Name = "textBoxFradrag";
+            textBoxFradrag.Size = new Size(100, 21);
+            textBoxFradrag.TabIndex = 29;
+            // 
+            // labelFradrag
+            // 
+            labelFradrag.AutoSize = true;
+            labelFradrag.Font = new Font("Arial Rounded MT Bold", 8.75F, FontStyle.Regular, GraphicsUnit.Point);
+            labelFradrag.ForeColor = SystemColors.Control;
+            labelFradrag.Location = new Point(765, 45);
+            labelFradrag.Name = "labelFradrag";
+            labelFradrag.Size = new Size(207, 14);
+            labelFradrag.TabIndex = 30;
+            labelFradrag.Text = "Fradrag i kr. (uden personfradrag)";
             // 
             // Form1
             // 
@@ -223,7 +231,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 64, 64);
             ClientSize = new Size(1010, 639);
-            Controls.Add(checkBox1);
+            Controls.Add(labelFradrag);
+            Controls.Add(textBoxFradrag);
             Controls.Add(label7);
             Controls.Add(textBoxOutput2);
             Controls.Add(SubmitMåned2);
@@ -264,6 +273,7 @@
         private Button SubmitMåned2;
         private TextBox textBoxOutput2;
         private Label label7;
-        private CheckBox checkBox1;
+        private TextBox textBoxFradrag;
+        private Label labelFradrag;
     }
 }
