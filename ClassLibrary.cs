@@ -17,23 +17,7 @@ namespace ProjektForms
             TotalExpenses = 0;
         }
     }
-
     public class SalaryManager
-    {
-        private Fradrag fradrag = new Fradrag();
-
-        public double CalculateRemainingAmount(double månedsløn, double totalExpenses)
-        {
-            return månedsløn - totalExpenses;
-        }
-
-        public double CalculateTax(double månedslønBeforeTax, double extraDeductions)
-        {
-            return fradrag.CalculateTax(månedslønBeforeTax, extraDeductions);
-        }
-    }
-
-    public class Fradrag
     {
         private const double arbejdsmarkedsbidragRate = 0.08;
         private const double kommuneRate = 0.251;
@@ -41,6 +25,11 @@ namespace ProjektForms
         private const double personFradragYearly = 49700;
         private const double topskatRate = 0.15;
         private const double topskatThreshold = 640109;
+
+        public double CalculateRemainingAmount(double månedsløn, double totalExpenses)
+        {
+            return månedsløn - totalExpenses;
+        }
 
         public double CalculateTax(double månedslønBeforeTax, double extraDeductions)
         {
@@ -56,7 +45,6 @@ namespace ProjektForms
             return arbejdsmarkedsbidrag + kommuneskat + bundskat + topskat;
         }
     }
-
     public static class GetTextBoxValues
     {
         public static double GetTextBoxValue(TextBox textBox)
