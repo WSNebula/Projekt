@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "yNefcmLJRbpCPSRvdcS5LNx58sm95UVN7TQ4ooqBVicd+E/MuiQCERSM1E57oFgihmz61WrESqlYzmjnYWW/VA==",
+  "dgSpecHash": "TpTcLEUnQ2k=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Theis\\Projekt\\ProjektForms.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\mail2\\Projekt\\ProjektForms.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mail2\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.19\\microsoft.windowsdesktop.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\mail2\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.19\\microsoft.netcore.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\mail2\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.19\\microsoft.aspnetcore.app.ref.7.0.19.nupkg.sha512",
+    "C:\\Users\\mail2\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.19\\microsoft.netcore.app.host.win-x64.7.0.19.nupkg.sha512"
+  ],
   "logs": []
 }

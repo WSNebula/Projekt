@@ -10,7 +10,6 @@ namespace ProjektForms
         {
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
-
         }
     }
 }
